@@ -1,0 +1,200 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  margin-bottom: 0.5rem;
+  color: #1a73e8;
+}
+
+.app-main {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Loading and Error Styles */
+.loading-container,
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-container {
+  color: #f44336;
+}
+
+/* Crypto Table Styles */
+.crypto-table-container {
+  margin-bottom: 2rem;
+}
+
+.crypto-table-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #fff;
+}
+
+.crypto-table th,
+.crypto-table td {
+  padding: 12px 15px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.crypto-table th:first-child,
+.crypto-table td:first-child,
+.crypto-table th:nth-child(2),
+.crypto-table td:nth-child(2) {
+  text-align: left;
+}
+
+.crypto-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.crypto-table tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.crypto-table tr:last-child {
+  border-bottom: none;
+}
+
+.crypto-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Crypto Name Cell Styles */
+.crypto-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crypto-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.crypto-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.crypto-symbol {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Price Change Styles */
+.positive {
+  color: #16c784;
+  font-weight: 500;
+}
+
+.negative {
+  color: #ea3943;
+  font-weight: 500;
+}
+
+/* Chart Styles */
+.crypto-chart {
+  width: 100px;
+  height: 30px;
+}
+
+/* Price Cell Styles */
+.price-cell {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .crypto-table th,
+  .crypto-table td {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .crypto-chart {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .crypto-table th,
+  .crypto-table td {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .crypto-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .crypto-chart {
+    width: 60px;
+  }
+
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .crypto-table-container h2 {
+    font-size: 1.5rem;
+  }
+}
