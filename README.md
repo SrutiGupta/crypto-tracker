@@ -85,18 +85,10 @@ crypto-tracker/
 
 4. Open your browser and navigate to the URL shown in the terminal (typically http://localhost:5173)
 
-## 📊 Creating a Demo
+## 📹 Demo Video
 
-To create a demo GIF or video of the application:
-
-1. Install a screen recording tool like [ScreenToGif](https://www.screentogif.com/) (Windows) or [Kap](https://getkap.co/) (Mac)
-2. Start the application with `npm run dev`
-3. Record a 2-5 minute demonstration showing:
-   - The UI layout
-   - Real-time price updates
-   - Responsive design (by resizing the browser window)
-4. Save the recording as a GIF or video
-5. Add it to your project repository
+Watch a quick walkthrough of the app here:  
+👉 [Click to Watch Demo on Loom](https://www.loom.com/share/57f2615a2eea4087b4815363032912ec?sid=d749ef59-f4ef-4695-9dc7-33939bf80432)
 
 ## 🌟 Potential Enhancements
 
